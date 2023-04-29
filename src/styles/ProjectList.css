@@ -1,0 +1,32 @@
+.projects-list {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 20px;
+   padding: 20px;
+   list-style: none;
+   margin: 0;
+}
+
+.project-card {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   border-radius: 10px;
+   background-color: #F7F6F2;
+   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+   outline: dashed 3px #2e2c2d;
+   outline-offset: -10px;
+   transition: transform 250ms ease;
+}
+
+.project-card:hover {
+   position: relative;
+   z-index: 1;
+   transform: scale(1.05);
+}
+
+.project-card__img {
+  width: 100%;
+}
